@@ -1,0 +1,35 @@
+<div class='mt-4' style='width:100vw'>
+  <div class='row'>
+    <div
+      class='col-lg-2 mt-2'
+      style='background-color: #d9d9db; height:300px;border-radius: 15px'
+    >
+      <button
+        style='background-color: #f05123;color: white;border-radius: 25px 25px 25px 25px;padding: 10px 20px;border: none;cursor: pointer;margin-left: 58px;
+    margin-top: 20px;outline: none;'
+      >ĐĂNG KÝ HỌC</button><br />
+      <p style='margin-top: 8px;'>
+        <i class='fa-solid fa-globe'></i>
+        {{course.level}}</p><br />
+      <p style='margin-top: 8px;'>
+        <i class='fa-solid fa-film'></i>
+        {{course.video}}</p><br />
+      <p style='margin-top: 8px;'>
+        <i class='fa-solid fa-clock'></i>
+        {{course.time}}</p><br />
+    </div>
+    <div class='col-lg-9'>
+      <h2>{{course.name}}</h2>
+      <iframe
+        width='560'
+        height='315'
+        src='https://www.youtube.com/embed/{{course.videoId}}'
+        title='YouTube video player'
+        frameborder='0'
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+        allowfullscreen
+      ></iframe>
+      <p>{{course.description}}</p>
+    </div>
+  </div>
+</div>

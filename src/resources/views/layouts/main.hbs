@@ -12,9 +12,45 @@
 <body>
     <div class="app">
        {{> header}}
-        <div class="container">
+       <div class="nav">
+        <div class='nav1 mt-4 ml-4 ' style="width:200px; height:800px;  box-shadow: 0 2px 4px rgba(7, 7, 7, 0.404); display: flex;
+                flex-direction: column;
+                justify-content: space-between;">
+            <div class="nav2">
+            <div class='qa mt-4 text-center'>
+                <i class="fa-solid fa-circle-plus fa-beat" style="color: #1459d2; font-size: 34px"></i>
+            </div>
+            <div class="qa mt-4 text-center">
+                <i class="fa-solid fa-house" style="font-size: 25px;padding-left:5px"></i>
+                <span class="d-block">Home</span>
+            </div>
+            <div class="qa mt-4 text-center">
+                <i class="fa-solid fa-road" style="font-size: 25px;padding-left:5px"></i>
+                <span class="d-block">Lộ trình</span>
+            </div>
+             <div class="qa mt-4 text-center">
+                <i class="fa-solid fa-lightbulb" style="font-size: 25px;padding-left:5px"></i>
+                <span class="d-block">Học</span>
+            </div>
+            <div class="qa mt-4 text-center">
+                <i class="fa-solid fa-newspaper" style="font-size: 25px;padding-left:5px"></i>
+                <span class="d-block">Blog</span>
+            </div>
+            </div>
+            <div class="qa mb-4 text-center">
+                <i class="fa-solid fa-bullhorn" style="font-size:25px;padding-top: 11px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background-color: whitesmoke;
+                    height: 50px"></i>
+            </div>
+            </div>
+        
+
+            <div class="container">
     {{{body}}}
 
+        </div>
         </div>
    {{> footer}}
     </div>
